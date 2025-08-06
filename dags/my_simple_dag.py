@@ -4,7 +4,7 @@ from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 from airflow.operators.python_operator import PythonOperator
 import datetime
-
+import time
 def greet():
     print('Writing in file')
     with open('/Development/airflow_tutorial/greet.txt', 'a+', encoding='utf8') as f:
